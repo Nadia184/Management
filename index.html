@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Student Management System</h1>
+<form id="resultForm">
+<label for="name">NAME:</label>
+<input type="text" id="name" name="name" required />
+
+<label for="roll">ROLL N0:</label>
+<input type="text" id="roll" name="roll" required />
+
+<label for="JP">JAVA PROGRAMMING:</label>
+<input type="number"id="JP" name="JP" min="0" max="100" required/>
+
+<label for="CF">COMPUTER FUNDAMENTALS :</label>
+<input type="number" id="CF" name="CF" min="0" max="100" required/>
+
+<label for="MAPD">MOBILE APPLICATION DEVELOPMENT :</label>
+<input type="number" id="MAPD" name="MAPD" min="0" max="100" required/>
+
+<button type="submit">Add Result</button>
+<button type="button" onclick="resetForm()">Reset</button>
+</form>
+
+<div class="table-container">
+<table id="resultTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Roll No</th>
+<th>JAVA PROGRAMMING MARKS</th>
+<th>COMPUTER FUNDAMENTALS MARKS</th>
+<th>MOBILE APPLICATION DEVELOPMENT MARKS</th>
+<th>Total</th>
+<th>Percentage</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
